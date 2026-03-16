@@ -57,7 +57,7 @@ const products = [
 
 export function Products() {
   return (
-    <section id="products" className="py-20 bg-background">
+    <section id="products" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
@@ -65,7 +65,7 @@ export function Products() {
             Our Recommended Products
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            High-quality dental care products recommended by Dr. Mitchell for optimal oral health
+            High-quality dental care products recommended by Dr. Patterson for optimal oral health
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export function Products() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="group bg-card rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow"
+              className="group bg-background rounded-xl border border-border overflow-hidden hover:shadow-lg transition-shadow"
             >
               {/* Product Image */}
               <div className="relative h-64 bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
@@ -147,7 +147,7 @@ export function Products() {
         </div>
 
         {/* Bulk Order Info */}
-        <div className="mt-16 p-8 bg-secondary/5 rounded-xl border border-border text-center">
+        <div className="mt-16 p-8 bg-primary/5 rounded-xl border border-border text-center">
           <h3 className="text-2xl font-bold text-foreground mb-2">Bulk Orders & Wholesale</h3>
           <p className="text-foreground/70 mb-4 max-w-2xl mx-auto">
             Looking to stock our products in your clinic or store? Contact us for wholesale pricing and special bulk discounts.
